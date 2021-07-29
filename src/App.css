@@ -1,0 +1,105 @@
+html, body, #root {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.zone {
+	float: left;
+}
+
+#rooms {
+	height: 100%;
+	width: 12em;
+	background: red;
+}
+
+#main {
+	height: 100%;
+	width: calc(100% - 26em);
+	background: green;
+}
+
+#messages {
+	height: calc(100% - 10em);
+	width: 100%;
+	background: yellow;
+	overflow-y: scroll;
+}
+
+.message {
+	float: right;
+	width: 60%;
+	border: 1px solid #000;
+	border-radius: .5em;
+	padding: .5em 1em;
+	margin: .5em 1.5em;
+}
+
+
+.message.me {
+	float: left;
+}
+
+.message .date {
+	font-size: .8em;
+	display: inline-block;
+	font-family: monotype;
+	margin-right: 1em;
+}
+
+.message .from:after {
+	content: " :";
+}
+
+
+.message .text {
+	padding: 0;
+	margin: 0;
+}
+
+
+#writer {
+	height: 10em;
+	width: 100%;
+	background: pink;
+}
+
+#writer textarea, #writer button {
+	padding: 0;
+	margin: 0;
+	border: none;
+	float: left;
+	height: 100%;
+}
+
+#writer textarea {
+	width: calc(100% - 8em);
+}
+
+#writer button {
+	width: 8em;
+	background: #aaa;
+}
+
+#users {
+	height: 100%;
+	width: 14em;
+	background: orange;
+	overflow-y: scroll;
+}
+
+.user {
+	margin-bottom: .5em;
+}
+
+.user > i {
+	font-size: 0.8em;
+}
+
+.user > span {
+	display: inline-block;
+	margin-left: .5em;
+	font-size: 0.8em;
+}
